@@ -10,10 +10,12 @@ class MyBot():
     def viky(self):
         driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
         driver.get("https://www.yatra.com/")
+        print("Above is URL")
 
         # Wait for the element to become clickable
         wait = WebDriverWait(driver, 10)
         element = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Yatra for Business")))
+        print("This is Simple Program")
 
         # Click the element
         element.click()
