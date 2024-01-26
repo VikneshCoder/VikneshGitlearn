@@ -16,6 +16,11 @@ class MyBot():
         wait = WebDriverWait(driver, 10)
         element = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Yatra for Business")))
         print("This is Simple Program")
+        print("This is Simple Program")
+        print("This is Simple Program")
+
+        print("This is Simple Program")
+        print("This is Simple Program")
 
         # Click the element
         element.click()
